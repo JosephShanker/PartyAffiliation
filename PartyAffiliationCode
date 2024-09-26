@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PartyAffiliation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user for their party affiliation using D, R, and I
+        System.out.println("Enter your party affiliation (D for Democrat, R for Republican, I for Independent): ");
+        String choice = scanner.nextLine().toUpperCase();
+
+        // Determine the response of the user's input
+        if (choice.equals("D")) {
+            System.out.println("You get a Democratic Donkey."); // Output for D
+        } else if (choice.equals("R")) {
+            System.out.println("You get a Republican Elephant."); // Output for R
+        } else if (choice.equals("I")) {
+            System.out.println("You get an Independent Person."); // Output for I
+        } else {
+            System.out.println("You get Other."); // Output for Other
+        }
+
+        scanner.close();
+    }
+}
